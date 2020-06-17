@@ -29,10 +29,36 @@ public class Main {
 
         //Abstract Parallelepiped Factory
 
-        Parallelepiped par2 = AbstractFactoryParallelepiped.create(5,5,5);
+        Parallelepiped par2 = AbstractFactoryParallelepiped.create(6,5,5);
         System.out.println(par2);
 
         // Student
+        Student student = new Student("Moskaliuk",
+                "Ivanna",
+                "Yurivna",
+                22,
+                "bachelor",
+                "Male",
+                false,
+                380_934_342_024L,
+                "Semudybu",
+                "KNUTE",
+                "FIT",
+                Speciality.DIGITAL_ECONOMY,
+                5,
+                1,
+                85,
+                false,
+                "Kurachenko",
+                "Anna",
+                "Ukrainian",
+                MaritalStatus.UNMARRIED,
+                true,
+                "anime, Marvel",
+                "Andrii",
+                "Roskladka",
+                "Analysis of the introductory campaign");
+        System.out.println(student);
 
 
     }
