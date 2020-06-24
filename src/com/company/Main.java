@@ -38,7 +38,7 @@ public class Main {
                 "Yurivna",
                 22,
                 "bachelor",
-                "Male",
+                "Female",
                 false,
                 380_934_342_024L,
                 "Semudybu",
@@ -54,12 +54,56 @@ public class Main {
                 "Ukrainian",
                 MaritalStatus.UNMARRIED,
                 true,
-                "anime, Marvel",
+                "Marvel",
                 "Andrii",
                 "Roskladka",
                 "Analysis of the introductory campaign");
         System.out.println(student);
 
+        // new Student Builder
+
+        Student Dmytriy = new Student.Builder()
+                .setLastName("Oleynyk")
+                .setFirstName("Dmitriy")
+                .setPatronimic("Oleksandrovych")
+                .setAge(21)
+                .setEducation("bachelor")
+                .setGender("Male")
+                .setIsMilitary(false)
+                .setPhoneNumber(380_938_666_645L)
+                .setHomeAdress("Bila Tserkva")
+                .setUniversity("KNUTE")
+                .setFaculty("FIT")
+                .setSpeciality(Speciality.DIGITAL_ECONOMY)
+                .setCourse(5)
+                .setGroup(5)
+                .setAverageScore(75)
+                .setIsScholarship(false)
+                .setLastNameGroupCaptain("Kurachenko")
+                .setFirstNameGroupCaptain("Anna")
+                .setNationality("Ukrainian")
+                .setMaritalStatus(MaritalStatus.UNMARRIED)
+                .setIsDriver(true)
+                .setHobby("anime")
+                .setLastNameTeacher("Roskladka")
+                .setFirstNameTeaсher("Andrii")
+                .setDiplomaTopic("Analitics in firms")
+                .build();
+
+        System.out.println(Dmytriy);
+
+        // new Student similar to Dmitriy
+
+        Student Andrii = new Student.Builder()
+                .setSimilarTo(Dmytriy)
+                .setLastName("Veremienko")
+                .setFirstName("Andrii")
+                .setAverageScore(82)
+                .setSpeciality(Speciality.COMPUTER_SCIENCE)
+                .setHomeAdress("Kyiv")
+                .build();
+
+        System.out.println(Andrii);
 
     }
 }
